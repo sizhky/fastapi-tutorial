@@ -8,7 +8,7 @@ $ uvicorn 0:app --reload
 
 Go to `http://127.0.0.1:8000/` and upload a fashion mnist image (white background) to see the results
 
-![](files/ui-demo.png)
+![](assets/ui-demo.png)
 
 **OR**
 
