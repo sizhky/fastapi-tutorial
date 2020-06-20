@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Style Transfer</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Style Transfer</h1>
+    <h2>Upload Images Below</h2>
+</body>
+<form action="/style_transfer/" enctype="multipart/form-data" method="post">
+<input name="files" type="file" multiple>
+<input type="submit">
+</form>
+<body>
+    {% if source is defined %}
+        <img src="/files/{{source}}" width="256"/> + 
+        <img src="/files/{{style}}"  width="256"/> = 
+        <img src="/files/{{output}}" width="256"/>
+    {% endif %}
+</body>
+
+</html>
+
