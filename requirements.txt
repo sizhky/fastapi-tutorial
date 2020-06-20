@@ -1,0 +1,7 @@
+Pillow
+fastapi
+torch_snippets
+aiofiles
+jinja2
+python-multipart
+uvicorn
