@@ -12,7 +12,7 @@ class FMNIST(nn.Module):
             nn.ReLU(),
             nn.Linear(1000, 10)
         ).to(device)
-        self.model.load_state_dict(torch.load('fmnist.weights.pth'))
+        self.model.load_state_dict(torch.load('fmnist.weights.pth', map_location=device))
         logger.info('Loaded FMNIST Model')
 
     def forward(self, x):

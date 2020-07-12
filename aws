@@ -1,0 +1,10 @@
+aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 575622217118.dkr.ecr.us-east-2.amazonaws.com
+
+AKIAJXLI2XBIQMRAARIQ
+KxVG+lJPIQFS4dUJCBIhKfv0edUaXLNUA+hOisCs
+
+docker pull 575622217118.dkr.ecr.us-east-2.amazonaws.com/fast_api_app:latest
+
+aws ecr get-login --region us-east-2 --no-include-email
+
+docker run -p 5000:5000 575622217118.dkr.ecr.us-east-2.amazonaws.com/fast_api_app
